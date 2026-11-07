@@ -1,0 +1,49 @@
+{
+  "id": "./?app=gastos",
+  "name": "Gastos",
+  "short_name": "Gastos",
+  "description": "Gastos, ingresos, tarjeta en cuotas, gastos fijos y ahorros (RoFac)",
+  "lang": "es-AR",
+  "start_url": "./?app=gastos",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0e3b34",
+  "theme_color": "#0e3b34",
+  "icons": [
+    {
+      "src": "img/icono-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icono-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "share_target": {
+    "action": "./compartir",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "files": [
+        {
+          "name": "archivos",
+          "accept": [
+            "image/*",
+            "application/pdf"
+          ]
+        }
+      ]
+    }
+  }
+}

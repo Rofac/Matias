@@ -1,0 +1,35 @@
+GASTOS · App personal para el celular (RoFac v1.0) — regalo para Matías
+========================================================================
+
+Anda SIN internet y SIN licencia. Los datos quedan sólo en el celular (no se mandan a ningún lado).
+
+QUÉ TIENE
+- + Gasto en 3 toques: monto, categoría (con emoji) y con qué pagó (efectivo, banco, Mercado Pago o tarjeta).
+- Ingresos (sueldo, aguinaldo, extras) y "Te queda del mes".
+- Tarjeta de crédito en cuotas: según el día de cierre calcula en qué resumen cae cada cuota;
+  muestra qué hay que pagar este mes y los próximos, y la deuda total. Se pueden cargar compras viejas
+  que ya viene pagando ("¿Es una compra vieja…?"). El pago de la tarjeta no se cuenta dos veces como gasto.
+- Gastos fijos (alquiler, luz, internet…) con día de vencimiento y "Pagar" (avisa los vencidos).
+- Cuentas con su saldo: efectivo, banco, billeteras, ahorro y dólares. Pasar plata entre cuentas y comprar dólares.
+  "Corregir saldo" si no coincide con la realidad.
+- Presupuesto: tope por categoría; avisa al 80% y cuando se pasa.
+- Informes: por categoría (comparado con el mes anterior), últimos 12 meses, promedio, pasar a Excel.
+- Compartir desde la app del banco o Mercado Pago: el comprobante se adjunta solo.
+  PDF del banco: lee importe, N° de operación y fecha. Imagen de Mercado Pago: lee el N° de operación.
+- Comprobantes con foto o PDF. Copia de seguridad .zip (con comprobantes) a Drive/WhatsApp. Copia diaria interna.
+- Clave para abrir la app (opcional). Si se la olvida: el código GAS-XXXX-XXXX se desbloquea con
+  generar_licencia_apps.py opción 9 (PRIVADO, sólo Rodrigo/Facundo).
+
+PUBLICARLA (igual que las otras)
+1. GitHub (Rofac) > New repository > nombre, por ejemplo: Gastos (Public) > Create.
+2. Add file > Upload files: index.html, sw.js, manifest.webmanifest, LEEME.txt > Commit changes.
+3. Subir las carpetas de a una: css, js, lib, img > Commit changes cada vez.
+4. Settings > Pages > Branch "main" y "/ (root)" > Save. Esperar 1 o 2 minutos.
+   Queda en: https://rofac.github.io/Gastos/  (el nombre del repositorio con las mismas mayúsculas)
+
+EN EL CELULAR DE MATÍAS
+1. Abrir la dirección en Chrome > menú ⋮ > "Instalar app". Abrirla siempre desde el ícono "Gastos".
+2. Configuración > poner su nombre.  Cuentas > tocar cada una > "Corregir saldo" con lo que tiene hoy.
+3. Tarjetas > + Tarjeta (día de cierre y de vencimiento). Cargar las compras en cuotas que ya viene pagando.
+4. Gastos fijos > cargar alquiler, servicios, etc.
+5. Hacer una copia de seguridad una vez por semana y guardarla en Google Drive (la app avisa).
